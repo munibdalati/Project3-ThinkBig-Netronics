@@ -431,3 +431,30 @@ footer{
 footer h4 {
     margin-bottom: 20%;
 }
+
+@media  (max-width: 800px) {
+  .footer1 :nth-child(1){
+    max-height: 40px;
+  }
+  footer{
+    font-size: 3vw;
+  }
+}
+
+@media  (min-width: 1000px) {
+  footer{
+      font-size: 1.5vw;
+      padding: 2% 2% 0% 2%;
+  }
+  .footer1{
+    font-size: 1.5vw;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  footer h4 {
+    margin-top: 9%;
+    margin-bottom: 10%;
+  }
+  .footer1 span{
+    display: none;
+  }
+}

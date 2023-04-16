@@ -20,7 +20,7 @@ body {
 /* buttons */
 
 .action-btns button {
-    width: 23rem;
+    width: 15rem;
     z-index: 1;
     position: relative;
     font-size: inherit;

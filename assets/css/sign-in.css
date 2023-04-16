@@ -1,2 +1,77 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+
+
+.signin-btn {
+    /* width: 49%; */
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: 2px solid #0158A8;
+
+    background-color: #0158A8;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.signin-btn::after {
+    content: '';
+    z-index: -1;
+    background-color: hsla(0, 0%, 100%, 0.2);
+    position: absolute;
+    top: -119%;
+    bottom: -69%;
+    width: 43%;
+    transform: translate3d(-525%, 0, 0) rotate(35deg);
+}
+
+.signin-btn:hover::after {
+    transition: transform 0.45s ease-in-out;
+    transform: translate3d(200%, 0, 0) rotate(35deg);
+}
+
+
+
+.signup-btn {
+    /* width: 49%; */
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: 2px solid #dd4b39;
+
+    background-color: #dd4b39;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.signup-btn::after {
+    content: '';
+    z-index: -1;
+    background-color: hsla(0, 0%, 100%, 0.2);
+    position: absolute;
+    top: -119%;
+    bottom: -69%;
+    width: 43%;
+    transform: translate3d(-525%, 0, 0) rotate(35deg);
+}
+
+.signup-btn:hover::after {
+    transition: transform 0.45s ease-in-out;
+    transform: translate3d(200%, 0, 0) rotate(35deg);
+}
+
+
+/*  */
+
+

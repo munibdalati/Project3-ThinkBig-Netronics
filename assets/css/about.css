@@ -96,6 +96,8 @@ hr {
     .vision-diagram{
         order: 3;
         margin-top: 0%;
+        text-align: center;
+
     }
     .vision-paragraphs{
         order: 4;

@@ -7,6 +7,7 @@
 }
 
 .contact_left{
+    text-align: center;
     background-color: #0158A8;
     border-radius: 15px;
     display: grid;
@@ -20,9 +21,7 @@
     padding: 5%;
 }
 
-.contact_left i{
-    font-size: small;
-}
+
 
 .contact_icon{
     display: flex;
@@ -55,7 +54,7 @@
     padding: 7% 0%;
 }
 
-.contact_right button{
+/* .contact_right button{
     color: white;
     width: 60%;
     background-color: #0158A8;
@@ -65,7 +64,44 @@
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+} */
+
+
+.contact_right button {
+    /* width: 49%; */
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: 2px solid #0158A8;
+
+    background-color: #0158A8;
+    overflow: hidden;
+    cursor: pointer;
 }
+
+.contact_right button::after {
+    content: '';
+    z-index: -1;
+    background-color: hsla(0, 0%, 100%, 0.2);
+    position: absolute;
+    top: -119%;
+    bottom: -69%;
+    width: 43%;
+    transform: translate3d(-525%, 0, 0) rotate(35deg);
+}
+
+.contact_right button:hover::after {
+    transition: transform 0.45s ease-in-out;
+    transform: translate3d(200%, 0, 0) rotate(35deg);
+}
+
+
+
 
 .input{
     width: 100%;
